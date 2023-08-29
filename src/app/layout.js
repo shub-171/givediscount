@@ -33,7 +33,10 @@ export default function RootLayout({ children }) {
 
         <meta name="robots" content="index, follow" />
 
+        <meta name="google-site-verification" content="kg1I36RdyZirIDU0dksjntfbTp3Ognn5mYHBt47F3nU" />
 <Script async src="https://www.googletagmanager.com/gtag/js?id=G-DVHHPHBBFC"></Script>
+  </Head>
+      <body suppressHydrationWarning={true} className={inter.className}>{children}
 <Script>
   {`
   window.dataLayer = window.dataLayer || [];
@@ -42,8 +45,8 @@ export default function RootLayout({ children }) {
 
   gtag('config', 'G-DVHHPHBBFC'); `}
 </Script>
-      </Head>
-      <body suppressHydrationWarning={true} className={inter.className}>{children}</body>
+      
+      </body>
     </html>
   )
 }
