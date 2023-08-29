@@ -31,7 +31,8 @@ export default function RootLayout({ children }) {
         <meta name="twitter:image" content="./Images/give discount.png" />
 
         <meta name="robots" content="index, follow" />
-
+        
+        <meta name="google-site-verification" content="kg1I36RdyZirIDU0dksjntfbTp3Ognn5mYHBt47F3nU" />
       </Head>
       <body suppressHydrationWarning={true} className={inter.className}>{children}</body>
     </html>
