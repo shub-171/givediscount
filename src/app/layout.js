@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,8 +32,17 @@ export default function RootLayout({ children }) {
         <meta name="twitter:image" content="./Images/give discount.png" />
 
         <meta name="robots" content="index, follow" />
-        
+
         <meta name="google-site-verification" content="kg1I36RdyZirIDU0dksjntfbTp3Ognn5mYHBt47F3nU" />
+<Script async src="https://www.googletagmanager.com/gtag/js?id=G-DVHHPHBBFC"></Script>
+<Script>
+  {`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-DVHHPHBBFC'); `}
+</Script>
       </Head>
       <body suppressHydrationWarning={true} className={inter.className}>{children}</body>
     </html>
