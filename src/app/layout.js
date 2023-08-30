@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
 
         <meta property="og:title" content="Give Discount - Discounted Amazon Products, Deals, and Savings" />
         <meta property="og:description" content="Find a wide selection of discounted Amazon products on Give Discount. Explore great deals on electronics, fashion, home goods, and more. Click to buy and save money while shopping through our affiliate links!" />
-        <meta property="og:image" content="../Images/" />
+        <meta property="og:image" content="../Images/Give Discount.png" />
         <meta property="og:url" content="https://givediscount.netlify.app/" />
 
         <meta name="twitter:card" content="summary_large_image" />
