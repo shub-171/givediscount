@@ -12,7 +12,7 @@ body {
   scroll-behavior: smooth;
 }
 
-header{
+header {
   background-color: #242424;
   display: flex;
   justify-content: space-between;
@@ -23,11 +23,13 @@ header{
   z-index: 10;
   margin: 0;
 }
-header > a{
+
+header>a {
   text-decoration: none;
   color: white;
 }
-.instagram{
+
+.instagram {
   display: flex;
   gap: 0.5rem;
   align-items: center;
@@ -35,38 +37,6 @@ header > a{
   font-family: cursive;
   text-decoration: none;
   color: #fd6f2c;
-}
-.search{
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 2rem;
-}
-#searchInput {
-  width: 100%;
-  max-width: 220px;
-  height: 40px;
-  padding: 12px;
-  margin-top: 100px;
-  border-radius: 12px;
-  border: 1.5px solid lightgrey;
-  outline: none;
-  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
-  box-shadow: 0px 0px 20px -18px;
-}
-
-#searchInput:hover {
-  border: 2px solid lightgrey;
-  box-shadow: 0px 0px 20px -17px;
-}
-
-#searchInput:active {
-  transform: scale(0.95);
-}
-
-#searchInput:focus {
-  border: 2px solid grey;
 }
 
 .container {
@@ -80,21 +50,25 @@ header > a{
   gap: 17px;
   width: 100%;
 }
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
   }
 }
+
 @media (min-width: 992px) {
   .container {
     width: 970px;
   }
 }
+
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
 }
+
 .container>a>.product {
   position: relative;
   display: flex;
@@ -131,11 +105,12 @@ header > a{
   width: 100%;
   border-radius: 0 0 5px 5px;
   padding: 7px 3px;
-  margin:0;
+  margin: 0;
   background-color: rgb(42, 42, 42);
   color: #fff;
 }
-.line{
+
+.line {
   text-align: center;
   font-size: 17px;
   word-break: keep-all;
@@ -143,7 +118,8 @@ header > a{
   color: #616161;
   visibility: hidden;
 }
-footer{
+
+footer {
   text-align: center;
   padding: 0.7rem 0.2rem;
   background-color: #0b0b0b;
@@ -151,27 +127,27 @@ footer{
 }
 
 @media (max-width:600px) {
-  
-  header{
+
+  header {
     justify-content: space-around;
     padding-left: 0;
     padding-right: 0;
   }
-  header>h1{
+
+  header>h1 {
     font-size: 30px;
   }
-  .search{
-  padding-right: 0rem;
-  justify-content: center;
+
+  .product {
+    width: 160px !important;
   }
-  .product{
-      width: 160px!important;
-  }
+
   .container>a>.product>.product_title {
-  line-height: 17px;
-  font-size: 17px!important;
+    line-height: 17px;
+    font-size: 17px !important;
   }
-  .instagram>h3{
+
+  .instagram>h3 {
     display: none;
   }
 }
