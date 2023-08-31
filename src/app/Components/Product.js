@@ -25,18 +25,6 @@ const Product = () => {
         }
     }, []);
 
-    useEffect(() => {
-        const updateLocalStorage = () => {
-            localStorage.setItem('shuffledProducts', JSON.stringify(shuffledProducts));
-        };
-
-        window.addEventListener('beforeunload', updateLocalStorage);
-
-        return () => {
-            window.removeEventListener('beforeunload', updateLocalStorage);
-        };
-    }, [shuffledProducts]);
-
     return (
         <>
             <div className="container">
