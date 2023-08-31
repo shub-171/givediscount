@@ -44,7 +44,7 @@ const Product = () => {
             <div className="container">
                 {
                     filteredProducts.map((product) => (
-                        <a href="https://h" target="_blank" rel="noreferrer" key={product.url}>
+                        <a href={product.url} target="_blank" rel="noreferrer" key={product.url}>
                             <div className="product">
                                 <img className='product_image' src={product.productImage} alt={product.title} title={product.title} />
                                 <span className="product_title">{product.title}</span>
