@@ -1,6 +1,6 @@
 "use client"
 import React, { useState, useRef, useEffect } from 'react';
-import products from "../Components/Products.json";
+import products from "./Products.json";
 
 const Product = () => {
     const [searchQuery, setSearchQuery] = useState('');
