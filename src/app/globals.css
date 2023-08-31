@@ -43,6 +43,7 @@ header>a {
   margin: 0rem auto;
   display: flex;
   padding-top: 30px;
+  padding-top: 120px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -114,7 +115,6 @@ header>a {
   text-align: center;
   font-size: 17px;
   word-break: keep-all;
-  margin: 4rem 2rem 2rem 2rem;
   color: #616161;
   visibility: hidden;
 }
